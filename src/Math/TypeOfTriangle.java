@@ -1,4 +1,4 @@
-package Arrays;
+package Math;
 
 public class TypeOfTriangle {
 
