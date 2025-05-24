@@ -22,9 +22,12 @@ public class distributeCandies {
         		a[i] = a[i] +b;
         		b = b-ini;
         	}
+        	System.out.println(b + "         "+i  +"        "+a[i]);
             ini++;
             i++;
-            i = (i>=a.length)?0:i+1;
+            if(i>=a.length) {
+            	i=0;
+            }
         }
         return a;
     }
