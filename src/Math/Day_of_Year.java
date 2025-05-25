@@ -16,7 +16,7 @@ public class Day_of_Year {
 //		System.out.println(leapYear(Integer.parseInt(str[0])));
 		daysInMonths[1] = (leapYear(Integer.parseInt(str[0])))?29:28;
 		int days = 0;
-		if(str[1]=="02") {
+		if(str[1]=="01") {
 			days = Integer.parseInt(str[2]);
 		}else {
 			for(int i=0;i<Integer.parseInt(str[1])-1;i++) {
