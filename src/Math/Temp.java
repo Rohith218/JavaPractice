@@ -5,8 +5,8 @@ public class Temp {
     static final int MOD = 1_000_000_007;
 
     public static void main(String[] args) {
-        System.out.println(numPrimeArrangements(5));    // Expected: 12
-        System.out.println(numPrimeArrangements(100));  // Expected: 682289015
+        System.out.println(numPrimeArrangements(5));    
+        System.out.println(numPrimeArrangements(100));  
     }
 
     public static int numPrimeArrangements(int n) {
