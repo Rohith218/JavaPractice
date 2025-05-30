@@ -18,27 +18,18 @@ public class CountDaysSpentTogether {
 		int c = intnumDays(arriveBob);
 		int d = intnumDays(leaveBob);
 		int res = Math.min(b, d) - Math.max(a, c);
-		if(res<0) {
-			return 0;
-		}else {
-			res+=1;
-		}
-		System.out.println(res);
-		return res;
+		return Math.max(0, res+1);
 	}
 
 	public static int intnumDays(String s){
         int[] a = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-        int num =0;
         String[] sa = s.split("-");
         int month = Integer.parseInt(sa[0]);
         int day = Integer.parseInt(sa[1]);
-        int sum  = 0;
         for(int i=0;i< month-1;i++) {
-        	sum+=a[i];
+        	day+=a[i];
         }
-        num = sum + day;
-        return num;
+        return day;
 	}
         
 
