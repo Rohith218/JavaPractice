@@ -8,6 +8,7 @@ public class JewelsandStones {
 	}
 	public int numJewelsInStones(String jewels, String stones) {
         int c =0;
+//        Integer.pa
         for(int i=0;i<jewels.length();i++){
             char ch = jewels.charAt(i);
             for(int j=0;j<stones.length();j++){
